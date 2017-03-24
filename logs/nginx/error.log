@@ -1,3 +1,73 @@
 2017/03/24 13:28:42 [emerg] 1#1: mkdir() "/var/cache/nginx/client_temp" failed (2: No such file or directory)
 2017/03/24 13:46:41 [emerg] 1#1: mkdir() "/var/cache/nginx/client_temp" failed (2: No such file or directory)
 2017/03/24 13:47:33 [emerg] 1#1: mkdir() "/var/cache/nginx/client_temp" failed (2: No such file or directory)
+2017/03/24 15:34:44 [emerg] 1#1: mkdir() "/var/cache/nginx/client_temp" failed (2: No such file or directory)
+2017/03/24 15:35:11 [emerg] 1#1: mkdir() "/var/cache/nginx/client_temp" failed (2: No such file or directory)
+2017/03/24 15:40:55 [error] 10#10: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/storage/logs/laravel-2017-03-24.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php(107): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\RotatingFileHandler->write(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#3 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illum...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/storage/logs/laravel-2017-03-24.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php(107): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\RotatingFileHandler->write(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#3 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug
+2017/03/24 15:42:17 [error] 9#9: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/storage/logs/laravel-2017-03-24.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php(107): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\RotatingFileHandler->write(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#3 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illum...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/storage/logs/laravel-2017-03-24.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php(107): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\RotatingFileHandler->write(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#3 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\E
+2017/03/24 15:50:38 [error] 9#9: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel-2017-03-24.log" could not be opened: failed to open stream: Permission denied in /var/www/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/www/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php(107): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\RotatingFileHandler->write(Array)
+#2 /var/www/www/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#3 /var/www/www/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#4 /var/www/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#5 /var/www/www/vendor/laravel/framework/src/Illum...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel-2017-03-24.log" could not be opened: failed to open stream: Permission denied in /var/www/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/www/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php(107): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\RotatingFileHandler->write(Array)
+#2 /var/www/www/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#3 /var/www/www/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Obje
+2017/03/24 16:28:08 [error] 10#10: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ErrorException: Declaration of App\Providers\EventServiceProvider::boot(Illuminate\Contracts\Events\Dispatcher $events) should be compatible with Illuminate\Foundation\Support\Providers\EventServiceProvider::boot() in /var/www/www/app/Providers/EventServiceProvider.php:8
+Stack trace:
+#0 /var/www/www/app/Providers/EventServiceProvider.php(8): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Declaration of ...', '/var/www/www/ap...', 8, Array)
+#1 /var/www/www/vendor/composer/ClassLoader.php(414): include('/var/www/www/ap...')
+#2 /var/www/www/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/var/www/www/ve...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Providers\\E...')
+#4 /var/www/www/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(146): spl_autoload_call('App\\Providers\\E...')
+#5 /var/www/www/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(114): Illu...
+PHP message: PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalErrorException: Uncaught ErrorException: Declaration of App\Providers\EventServiceProvider::boot(Illuminate\Contracts\Events\Dispatcher $events) should be compatible with Illuminate\Foundation\Support\Providers\EventServiceProvider::boot() in /var/www/www/app/Providers/EventServiceProvider.php:8
+Stack trace:
+#0 /var/www/www/app/Providers/EventServiceProvider.php(8): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Declaration of ...', '/var/www/www/ap...', 8, Array)
+#1 /var/www/www/vendor/composer/ClassLoader.php(414): include('/var/www/www/ap...')
+#2 /var/www/www/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/var/www/www/ve...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Providers\\E...')
+#4 /var/www/www/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(146): spl_autoload_call(
+2017/03/24 16:43:15 [error] 7#7: *71 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: locahost, request: "GET /common/messaggi_non_letti HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost:8000", referrer: "http://localhost:8000/"
+2017/03/24 16:43:15 [error] 8#8: *73 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: locahost, request: "GET /application/poller HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost:8000", referrer: "http://localhost:8000/"
+2017/03/24 17:13:31 [error] 7#7: *242 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: locahost, request: "GET /application/poller HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost:8000", referrer: "http://localhost:8000/"
+2017/03/24 17:13:31 [error] 9#9: *244 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: locahost, request: "GET /common/messaggi_non_letti HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost:8000", referrer: "http://localhost:8000/"
+2017/03/24 17:18:13 [error] 9#9: *270 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.19.0.1, server: locahost, request: "GET /?XDEBUG_SESSION_START=19877 HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "scuola.dev:8000"
+2017/03/24 17:23:32 [error] 9#9: *344 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.19.0.1, server: locahost, request: "GET /common/messaggi_non_letti HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "scuola.dev:8000", referrer: "http://scuola.dev:8000/?XDEBUG_SESSION_START=19105"
+2017/03/24 17:23:43 [error] 9#9: *346 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.19.0.1, server: locahost, request: "GET /common/tipo_assenza HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "scuola.dev:8000", referrer: "http://scuola.dev:8000/?XDEBUG_SESSION_START=19105"
+2017/03/24 17:26:31 [error] 7#7: *360 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.19.0.1, server: locahost, request: "GET /application/poller HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "scuola.dev:8000", referrer: "http://scuola.dev:8000/?XDEBUG_SESSION_START=19105"
