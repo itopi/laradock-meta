@@ -1,2 +1,4 @@
 /logs
 data
+access.log
+error.log
